@@ -89,7 +89,7 @@ public class Mainclass {
 	 public static void main(String[] args) {	
 		
 		Scanner in = new Scanner(System.in);
-		System.out.print("Enter sequence of tetramino in random order (L,S,T,O,J,Z,I):");
+		System.out.print("Enter sequence of tetramino in random order (L,S,T,O,J,Z,I): ");
 		String input_str = in.next();
 		
 		Pattern pattern = Pattern.compile("[^,LSTOJZI]");
@@ -105,13 +105,13 @@ public class Mainclass {
 		//----- drop down figure -----
 		for(String figure : input) {
 			switch (figure) {
-					case "L": place(L); break;
-					case "J": place(J); break;
-					case "T": place(T); break;
-					case "S": place(S); break;
-					case "Z": place(Z); break;
-					case "O": place(O); break;
-					case "I": place(I); break;
+				 case "L": place(L); System.out.print("\n\nL is dropped"); break;
+	             case "J": place(J); System.out.print("\n\nJ is dropped"); break;
+	             case "T": place(T); System.out.print("\n\nT is dropped"); break;
+	             case "S": place(S); System.out.print("\n\nS is dropped"); break;
+	             case "Z": place(Z); System.out.print("\n\nZ is dropped"); break;
+	             case "O": place(O); System.out.print("\n\nO is dropped"); break;
+	             case "I": place(I); System.out.print("\n\nI is dropped"); break;
 					
 			}
 			//---- show field------
